@@ -3,101 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elskeptico's Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        header {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 20px;
-        }
-
-        header img {
-            border-radius: 50%;
-            width: 100px;
-            height: 100px;
-            cursor: pointer;
-        }
-
-        header h1 {
-            margin: 10px 0 5px;
-        }
-
-        header .aka {
-            cursor: pointer;
-            color: #007BFF;
-            text-decoration: underline;
-        }
-
-        .about {
-            text-align: center;
-            margin: 20px;
-        }
-
-        .links {
-            display: grid;
-            grid-template-columns: repeat(2, 150px);
-            gap: 20px;
-            margin-bottom: 30px;
-        }
-
-        .link {
-            position: relative;
-            width: 150px;
-            height: 150px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: rgba(0, 0, 0, 0.5);
-            color: #fff;
-            font-size: 1.2rem;
-            font-weight: bold;
-            text-align: center;
-            text-decoration: none;
-            overflow: hidden;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .link img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: 1;
-        }
-
-        .link span {
-            z-index: 2;
-        }
-
-        footer {
-            text-align: center;
-            margin: 20px 0;
-            font-size: 0.9rem;
-            color: #666;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js">
+    <title>elskeptico's Website</title>
 </head>
 <body>
 
 <header>
     <img id="profile-picture" src="profpic.jpg" alt="Profile Picture">
     <h1>elskeptico</h1>
-    <div class="aka">AKA <span id="aka-name">that guy</span></div>
+    <div class="aka">AKA <span id="aka-name">Oliver</span></div>
 </header>
 
 <section class="about">
@@ -113,37 +28,18 @@
         <img src="site2.jpg" alt="Site 2">
         <span>My podcast</span>
     </a>
-    <a href="#" class="link">
+    <a href="elskeptico.github.io/CanyonChronicles" class="link">
         <img src="site3.jpg" alt="Site 3">
-        <span>efi</span>
+        <span>The Canyon Chronicles</span>
     </a>
     <a href="#" class="link">
         <img src="site4.jpg" alt="Site 4">
-        <span>Website 4</span>
+        <span>Some animation I did</span>
     </a>
 </section>
 
 <footer>
     <p>I made dis. No copying or I'm telling!</p>
 </footer>
-
-<script>
-    const profilePictures = ["profpic.jpg", "profile2.jpg", "profile3.jpg"];
-    const akaNames = ["Ol█ve█ E███r█", "a ghooooooost", "youuur mom!", "ElSkeptico", "is a weird acronym", "Steeeve", "AKA AKA AKA AKA" , "Your wierd hippie uncle", "Help, I'm trapped writing AKA names!", "Markus Persson :O"];
-
-    const profilePicture = document.getElementById("profile-picture");
-    const akaName = document.getElementById("aka-name");
-
-    profilePicture.addEventListener("click", () => {
-        const randomIndex = Math.floor(Math.random() * profilePictures.length);
-        profilePicture.src = profilePictures[randomIndex];
-    });
-
-    akaName.parentElement.addEventListener("click", () => {
-        const randomIndex = Math.floor(Math.random() * akaNames.length);
-        akaName.textContent = akaNames[randomIndex];
-    });
-</script>
-
 </body>
 </html>
