@@ -11,6 +11,10 @@ input.addEventListener("keydown", function(event) {
   }
 });
 
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 function handleCommand(command) {
   let response = "";
 
@@ -41,6 +45,19 @@ function handleCommand(command) {
       break;
     case "doge":
       response = "idiots in power";
+      break;
+    case "you":
+      response = "me";
+      break;
+    case "haha":
+      response = "ho ho ho, that's a good chap";
+      break;
+    case "mainframe":
+      response = "hack into it!";
+      break;
+    case "unblocker":
+      response = "access granted";
+      window.location.href = "unblocks"
       break;
     case "clear":
       output.innerHTML = "";
