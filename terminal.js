@@ -1,7 +1,7 @@
 const input = document.getElementById("commandInput");
 const output = document.getElementById("output");
 var kill = 0
-
+var admin = false
 input.addEventListener("keydown", function(event) {
   if (event.key === "Enter") {
     const command = input.value.trim();
@@ -75,9 +75,12 @@ function handleCommand(command) {
       if (kill === 1) {
         response = "Me? y/n"
         kill += 1
+      }
       if (kill === 2) {
         response = "Good choice"
       }
+      else {
+        response = "Don't say it..."
       }
       break;
     case "haha":
@@ -85,6 +88,18 @@ function handleCommand(command) {
       break;
     case "mainframe":
       response = "hack into it!";
+      break;
+    case "oliver":
+      response = "*elskeptico";
+      break;
+    case "system":
+      response = "elskeptico.github.io runs on The Very Essence Of The Universe(TVEOTU) version 1.5.7.∞";
+      break;
+    case "help me":
+      response = "No!";
+      break;
+    case "systemchange":
+      if (admin = true) {}
       break;
     case "unblocker":
       response = "access granted";
