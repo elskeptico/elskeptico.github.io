@@ -1,5 +1,6 @@
 const input = document.getElementById("commandInput");
 const output = document.getElementById("output");
+var kill = 0
 
 input.addEventListener("keydown", function(event) {
   if (event.key === "Enter") {
@@ -48,6 +49,36 @@ function handleCommand(command) {
       break;
     case "you":
       response = "me";
+      break;
+    case "me":
+      response = "you";
+      break;
+    case "tradenarkers":
+      response = "I haven't heard that name in a long time";
+      break;
+    case "elskeptico":
+      response = "A handsome young man, to be sure";
+      break;
+    case "kill":
+      response = "You? y/n";
+      kill += 1
+      break;
+    case "y":
+      if (kill === 1) {
+        window.location.href = "put a suicide help link in me!"
+      }
+      if (kill === 2) {
+        window.location.href = "deadskeptico.jpg"
+      }
+      break;
+    case "n":
+      if (kill === 1) {
+        response = "Me? y/n"
+        kill += 1
+      if (kill === 2) {
+        response = "Good choice"
+      }
+      }
       break;
     case "haha":
       response = "ho ho ho, that's a good chap";
