@@ -25,6 +25,9 @@ function handleCommand(command) {
     case "help":
       response = "you get none";
       break;
+    case "list":
+      response = "Usable commands:      help,list,hello,bill cipher,who are you, null, minecraft, trump, doge, you, me, greetings, me, whoami, elskeptico, tradenarkers, date, the_tape, the_tape_login, cat, gomez, kill, n, haha, mainframe, oliver, system, help me, systemchange";
+      break;
     case "hello":
       response = "yo angelo";
       break;
