@@ -50,6 +50,12 @@ function handleCommand(command) {
     case "you":
       response = "me";
       break;
+    case "greetings":
+      response = "earthlings";
+      break;
+    case "":
+      response = "You didn't actually say anything";
+      break;
     case "me":
       response = "you";
       break;
