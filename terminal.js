@@ -1,7 +1,9 @@
 const input = document.getElementById("commandInput");
 const output = document.getElementById("output");
-var kill = 0
-var admin = false
+var kill = 0;
+var admin = false;
+var needtapepassword = false;
+
 input.addEventListener("keydown", function(event) {
   if (event.key === "Enter") {
     const command = input.value.trim();
@@ -59,15 +61,38 @@ function handleCommand(command) {
     case "me":
       response = "you";
       break;
-    case "tradenarkers":
-      response = "I haven't heard that name in a long time";
+    case "whoami":
+      response = "Not sure, but probably a weirdo on a weirdo's website using weird commands";
       break;
     case "elskeptico":
       response = "A handsome young man, to be sure";
       break;
+    case "tradenarkers":
+      response = "I haven't heard that name in a long time";
+      break;
+    case "date":
+      response = "December 10, 1932 - the emus won";
+      break;
+    case "the_tape":
+      response = "A collection of pure comedy";
+      break;
+    case "the_tape_login":
+      response = "Password please!";
+      needtapepassword = true;
+      break;
+    case "cat":
+      response = "meow :)";
+      break;
+    case "gomez":
+      if (needtapepassword == true) {
+        response = "Access granted"
+        window.location.href = "the_tape"
+      }
+      response = "A genius password to a tape";
+      break;
     case "kill":
       response = "You? y/n";
-      kill += 1
+      kill += 1;
       break;
     case "y":
       if (kill === 1) {
@@ -79,8 +104,8 @@ function handleCommand(command) {
       break;
     case "n":
       if (kill === 1) {
-        response = "Me? y/n"
-        kill += 1
+        response = "Me? y/n";
+        kill += 1;
       }
       if (kill === 2) {
         response = "Good choice"
