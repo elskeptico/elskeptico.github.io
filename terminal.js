@@ -3,6 +3,7 @@ const output = document.getElementById("output");
 var kill = 0;
 var admin = false;
 var needtapepassword = false;
+var needunblockpassword = false;
 
 input.addEventListener("keydown", function(event) {
   if (event.key === "Enter") {
@@ -57,6 +58,12 @@ function handleCommand(command) {
       break;
     case "greetings":
       response = "earthlings";
+      break;
+    case "unblock":
+      response = "It's possible.";
+      break;
+    case "unblock_login":
+      response = "Enter password";
       break;
     case "":
       response = "You didn't actually say anything";

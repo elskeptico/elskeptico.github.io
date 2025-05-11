@@ -1,10 +1,14 @@
 body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: #000000;
-            color: #8e8f99;
-        }
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000;
+    color: #8e8f99;
+}
+img {
+    width: 1000px;
+    height: auto;
+}
