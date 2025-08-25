@@ -6,6 +6,11 @@ body {
   padding: 0;
 }
 
+@font-face {
+   font-family: JetBrains;
+   src: url(JetBrainsMono-Regular.woff2);
+}
+
 #terminal {
   padding: 10px;
   max-width: 800px;
@@ -30,7 +35,7 @@ input[type="text"] {
   background: none;
   border: none;
   color: #00FF00;
-  font-family: monospace;
+  font-family: JetBrains, monospace;
   font-size: 16px;
   outline: none;
   width: 100%;
