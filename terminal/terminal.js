@@ -8,7 +8,7 @@ var needunblockpassword = false;
 input.addEventListener("keydown", function(event) {
   if (event.key === "Enter") {
     const command = input.value.trim();
-    output.innerHTML += `> ${command}\n`;
+    output.innerHTML += `<span>></span> ${command}\n`;
     input.value = "";
 
     handleCommand(command.toLowerCase());
@@ -106,7 +106,7 @@ function handleCommand(command) {
       break;
     case "y":
       if (kill === 1) {
-        window.location.href = "put a suicide help link in me!"
+        window.location.href = "https://988lifeline.org"
       }
       if (kill === 2) {
         window.location.href = "deadskeptico.jpg"

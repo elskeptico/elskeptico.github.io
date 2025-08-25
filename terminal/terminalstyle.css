@@ -30,13 +30,15 @@ body {
 .prompt {
   margin-right: 5px;
 }
-
+span {
+  font-size: 20px;
+}
 input[type="text"] {
   background: none;
   border: none;
   color: #00FF00;
   font-family: JetBrains, monospace;
-  font-size: 16px;
+  font-size: 20px;
   outline: none;
   width: 100%;
 }
