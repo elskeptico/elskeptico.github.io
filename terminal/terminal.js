@@ -32,6 +32,34 @@ function handleCommand(command) {
     case "hello":
       response = "yo angelo";
       break;
+    case "penis":
+      response = "fuck you";
+      break;
+    case "sex":
+      response = "die";
+      break;
+    case "daddy":
+      response = "no please";
+      break;
+    case "hejjo":
+      response = "yo angejjo";
+      break;
+    case "meme":
+      response = "memesmemesmemesmemesmemesmemesmemesmemesmemesmemesmemesmemesmemesmemesmemesmemesmemesmemesmemesmemesmemesmemesmemesmemesmemesmemesmemesmemesmemesmemesmemesmemesmemesmemesmemesmemesmemesmemesmemesmemesmemesmemesmemesmemesmemesmemesmemesmemesmemesmemesmemesmemesmemesmemesmemes";
+      break;
+    case "pokemon":
+      response = "GOTTA CATCH EM ALLLL BRRRROOOOOOIOIOIEFH:?KJNBG:IYRBCNREW!!!!!!1!11!1!!1!!!1!11!1";
+      break;
+    case "yu-gi-oh":
+      response = "*sigh* hi atticus";
+      break;
+    case "ultraman":
+      response = "yes, I know atticus";
+      break;
+    case "kamen rider":
+      response = "shut upppppp";
+      break;
+    
     case "bill cipher":
       response = "wrong website dumbass";
       break;
@@ -144,7 +172,7 @@ function handleCommand(command) {
       break;
     case "unblocker":
       response = "access granted";
-      window.location.href = "unblocks"
+      window.location.href = "unblock"
       break;
     case "clear":
       output.innerHTML = "";

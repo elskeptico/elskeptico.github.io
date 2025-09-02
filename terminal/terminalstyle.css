@@ -30,9 +30,11 @@ body {
 .prompt {
   margin-right: 5px;
 }
+
 span {
   font-size: 20px;
 }
+
 input[type="text"] {
   background: none;
   border: none;
