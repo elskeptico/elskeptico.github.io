@@ -1,0 +1,42 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8"><title>Making sure you're not a bot!</title><link rel="stylesheet" href="css/xess.min.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="robots" content="noindex,nofollow"><style>
+        body,
+        html {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .centered-div {
+            text-align: center;
+        }
+
+        #status {
+            font-variant-numeric: tabular-nums;
+        }
+
+        #progress {
+          display: none;
+          width: 90%;
+          width: min(20rem, 90%);
+          height: 2rem;
+          border-radius: 1rem;
+          overflow: hidden;
+          margin: 1rem 0 2rem;
+					outline-offset: 2px;
+					outline: #b16286 solid 4px;
+				}
+
+        .bar-inner {
+            background-color: #b16286;
+            height: 100%;
+            width: 0;
+            transition: width 0.25s ease-in;
+        }
+    	</style><script id="anubis_version" type="application/json">"v1.21.3"
+</script><script id="anubis_challenge" type="application/json">{"rules":{"algorithm":"fast","difficulty":2,"report_as":2},"challenge":"d9ae669774b22b6f5dfb43804294546d1ff29e520fc5616066563af5ab0a18c64f47d0d584f1d16b850fa00a219cf094a8f070b0c01fbfba7794301977b4a6ef21d1afb16513816d1b011284ccaa57ef7ad9d41fc738209bb87a5453ac06bf4ff1f899cda2a2f4eca280f88cab97310d7f38f8fc84c73b01372991533677c61ae4f5ab5206c35b1486dec02dbf7697c9cdc812532e7998b010eb885a5139b1e787ec3fcb863ce5c310dd939d89989a9c643e9b7738f360a07acef23aaa08fe74d2e8c48d8b9b7023ed36b6dae0c41cfc529e9ce5d451517b6a71143d5fea39e2d3cfb44396989fbb13fda25882ea575ece64a58931e9591a430d5f156d2c1bdb"}
+</script><script id="anubis_base_prefix" type="application/json">""
+</script></head><body id="top"><main><h1 id="title" class="centered-div">Making sure you're not a bot!</h1><div class="centered-div"><img id="image" style="width:100%;max-width:256px;" src="images/pensive.webp"> <img style="display:none;" src="images/happy.webp"><p id="status">Loading...</p><script async="" type="module" src="main.mjs"></script><div id="progress" role="progressbar" aria-labelledby="status"><div class="bar-inner"></div></div><details><summary>Why am I seeing this?</summary><p>You are seeing this because the administrator of this website has set up Anubis to protect the server against the scourge of AI companies aggressively scraping websites. This can and does cause downtime for the websites, which makes their resources inaccessible for everyone.</p><p>Anubis is a compromise. Anubis uses a Proof-of-Work scheme in the vein of Hashcash, a proposed proof-of-work scheme for reducing email spam. The idea is that at individual scales the additional load is ignorable, but at mass scraper levels it adds up and makes scraping much more expensive.</p><p>Ultimately, this is a hack whose real purpose is to give a "good enough" placeholder solution so that more time can be spent on fingerprinting and identifying headless browsers (EG: via how they do font rendering) so that the challenge proof of work page doesn't need to be presented to users that are much more likely to be legitimate.</p><p>Please note that Anubis requires the use of modern JavaScript features that plugins like JShelter will disable. Please disable JShelter or other such plugins for this domain.</p><p>This website is running Anubis version <code>v1.21.3</code>.</p></details><noscript><p>Sadly, you must enable JavaScript to get past this challenge. This is required because AI companies have changed the social contract around how website hosting works. A no-JS solution is a work-in-progress.</p></noscript><div id="testarea"></div></div><footer><div class="centered-div"><p>Protected by <a href="https://github.com/TecharoHQ/anubis">Anubis</a> From <a href="https://techaro.lol">Techaro</a>. Made with ❤️ in 🇨🇦.</p><p>Mascot design by <a href="https://bsky.app/profile/celphase.bsky.social">CELPHASE</a>.</p></div></footer></main></body></html>
