@@ -66,11 +66,11 @@
             text-decoration: none;
             overflow: hidden;
             border-radius: 8px;
-            
+            transition: all 0.4s;
         }
 
         .link:hover {
-            box-shadow: -4px 4px 0px #2a52be;
+            box-shadow: -4px -4px 0px #2a52be;
             transform: translate(4px, 4px);
             transition: all 0.4s;
         }
