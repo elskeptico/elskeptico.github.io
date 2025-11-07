@@ -60,7 +60,13 @@
             text-decoration: none;
             overflow: hidden;
             border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            
+        }
+
+        .link:hover {
+            box-shadow: -4px -4px 0px rgb(0, 255, 213);
+            transform: translate(4px, 4px);
+            transition: all 0.4s;
         }
 
         .link img {
