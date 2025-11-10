@@ -34,13 +34,13 @@
 
         header .aka {
             cursor: pointer;
-            color: #2a52be;
+            color: hsla(19, 100%, 44%, 1);
             font-weight: bold;
         }
 
         a {
             text-decoration: none;
-            color: #2a52be;
+            color: hsla(19, 100%, 44%, 1);
             font-weight: bold;
         }
 
@@ -75,13 +75,13 @@
         }
 
         .link:hover {
-            box-shadow: -4px -4px 0px #2a52be;
+            box-shadow: -4px -4px 0px hsla(19, 100%, 44%, 1);
             transform: translate(4px, 4px);
             transition: all 0.4s;
         }
 
         .link:active {
-            box-shadow: 4px -4px 0px #2a52be;
+            box-shadow: 4px -4px 0px hsla(19, 100%, 44%, 1);
             transform: translateY(-4px);
             transition: all 0.05s;
         }
