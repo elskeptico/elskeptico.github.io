@@ -75,6 +75,12 @@
             transition: all 0.4s;
         }
 
+        .link:active {
+            box-shadow: 4px -4px 0px #2a52be;
+            transform: translateY(-4px);
+            transition: all 0.2s;
+        }
+
         .link img {
             position: absolute;
             top: 0;
