@@ -8,7 +8,12 @@
             background-color: #f4f4f4;
             color: #333;
         }
-
+    /* CSS HEX 
+    --black: #000000ff;
+    --blood-red: #5F0000ff;
+    --syracuse-red-orange: #DF4600ff;
+    --safety-orange: #FB7A0Cff;
+    --lemon-lime: #E4FC05ff;*/
         header {
             display: flex;
             flex-direction: column;
@@ -78,7 +83,7 @@
         .link:active {
             box-shadow: 4px -4px 0px #2a52be;
             transform: translateY(-4px);
-            transition: all 0.2s;
+            transition: all 0.05s;
         }
 
         .link img {
