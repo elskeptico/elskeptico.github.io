@@ -56,7 +56,7 @@
             margin-bottom: 30px;
         }
 
-        a.links {
+        link {
             position: relative;
             width: 150px;
             height: 150px;
@@ -74,23 +74,23 @@
             transition: all 0.4s;
         }
 
-        .link3 {
+        #link3 {
             background-image: linear-gradient(45deg, #c10000, #ff9900);
         }
 
-        a.links:hover {
+        link:hover {
             box-shadow: -4px -4px 0px hsla(19, 100%, 44%, 1);
             transform: translate(4px, 4px);
             transition: all 0.4s;
         }
 
-        a.links:active {
+        link:active {
             box-shadow: 4px -4px 0px hsla(19, 100%, 44%, 1);
             transform: translateY(-4px);
             transition: all 0.05s;
         }
 
-        a.links img {
+        link img {
             position: absolute;
             top: 0;
             left: 0;
@@ -100,7 +100,7 @@
             z-index: 1;
         }
 
-        a.links span {
+        link span {
             z-index: 2;
         }
 
