@@ -13,6 +13,7 @@
     --blood-red: #5F0000ff;
     --syracuse-red-orange: #DF4600ff;
     --safety-orange: #FB7A0Cff;
+    #8e0300
     --lemon-lime: #E4FC05ff;*/
         header {
             display: flex;
@@ -63,7 +64,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: rgba(0, 0, 0, 0.5);
+            background: #8e0300;
             color: #fff;
             font-size: 1.2rem;
             font-weight: bold;
@@ -99,10 +100,6 @@
         .link span {
             z-index: 2;
         }
-
-       .link3 {
-            background-color: hsla(25, 79, 21, 0.5);
-       }
 
         footer {
             text-align: center;
