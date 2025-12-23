@@ -175,6 +175,9 @@ function handleCommand(command) {
       response = "access granted";
       window.location.href = "unblock"
       break;
+    case "modpacks":
+      window.location.href = "/goodpacks"
+      return;
     case "clear":
       output.innerHTML = "";
       return;
