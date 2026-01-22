@@ -1,7 +1,12 @@
 h1 {
-    font-size: 3rem;
+    font-size: 6rem;
     text-align: center;
     color: #040303ff;
+}
+
+generic div{
+    margin-top: 25%;
+    margin-top: 25%;
 }
 /*--black: #040303ff;
 --dark-slate-grey: #3a4e48ff;
