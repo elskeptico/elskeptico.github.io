@@ -1,9 +1,70 @@
+/*HEY!!!!
+
+
+
+
+
+this is all secret!!
+
+
+
+
+
+looking at it spoils the fun!
+
+
+
+
+
+
+don't!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*grrrrrr*
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const input = document.getElementById("commandInput");
 const output = document.getElementById("output");
 var kill = 0;
 var admin = false;
 var needtapepassword = false;
 var needunblockpassword = false;
+
+console.log("you seem to have wandered far into the developer section...")
+console.log("...")
+console.log("...")
+console.log("...")
+console.log("run along now.")
 
 input.addEventListener("keydown", function(event) {
   if (event.key === "Enter") {
@@ -14,7 +75,7 @@ input.addEventListener("keydown", function(event) {
     handleCommand(command.toLowerCase());
   }
 });
-
+/*please don't look!*/
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -26,12 +87,9 @@ function handleCommand(command) {
     case "help":
       response = "you get none";
       break;
-    case "list":
-      response = "Usable commands:      help,list,hello,bill cipher,who are you, null, minecraft, trump, doge, you, me, greetings, me, whoami, elskeptico, tradenarkers, date, the_tape, the_tape_login, cat, gomez, kill, n, haha, mainframe, oliver, system, help me, systemchange";
-      break;
     case "boot tipcalc":
-      response = "If you insist."
-      window.location.href = "elskeptico.gihub.io/projects/tipcalc"
+      response = "If you insist.";
+      window.location.href = "elskeptico.gihub.io/projects/tipcalc";
       break;                                                   
     case "penis":
       response = "fuck you";
@@ -63,6 +121,7 @@ function handleCommand(command) {
     
     case "bill cipher":
       response = "wrong website dumbass";
+      console.log("bill cipher: thisisnotawebsitedotcom.com");
       break;
     case "who are you":
       response = "Either your father or steve";
@@ -80,7 +139,7 @@ function handleCommand(command) {
       response = "bloated cheeto";
       break;
     case "doge":
-      response = "idiots in power";
+      response = "EPIC LOLZ";
       break;
     case "you":
       response = "me";
@@ -90,6 +149,7 @@ function handleCommand(command) {
       break;
     case "unblock":
       response = "It's possible.";
+      console.log("unblock: You need to _login.")
       break;
     case "unblock_login":
       response = "Enter password";
@@ -112,12 +172,18 @@ function handleCommand(command) {
     case "date":
       response = "December 10, 1932 - the emus won";
       break;
+    case "tape":
+      response = "I used to be in love with tape.";
+      console.log("tape: you may be looking for the_tape");
+      break;
     case "the_tape":
       response = "A collection of pure comedy";
+      console.log("the_tape: you need to _login");
       break;
     case "the_tape_login":
       response = "Password please!";
       needtapepassword = true;
+      console.log("the_tape_login: you know what they say; if it starts with a G, and people use it to refer to me, enter it into the terminal on my website.")
       break;
     case "cat":
       response = "meow :)";
@@ -127,8 +193,11 @@ function handleCommand(command) {
         response = "Access granted"
         window.location.href = "the_tape"
       }
-      response = "A genius password to a tape";
-      break;
+      else {
+        response = "No I am Gomez, I said.";
+        console.log("gomez: You need this for one of my past loves.")
+      }
+        break;
     case "kill":
       response = "You? y/n";
       kill += 1;
@@ -147,10 +216,10 @@ function handleCommand(command) {
         kill += 1;
       }
       if (kill === 2) {
-        response = "Good choice"
+        response = "Good choice";
       }
       else {
-        response = "Don't say it..."
+        response = "Don't say it...";
       }
       break;
     case "haha":
@@ -187,3 +256,4 @@ function handleCommand(command) {
 
   output.innerHTML += response + "\n";
 }
+/*I hate you for looking*/
