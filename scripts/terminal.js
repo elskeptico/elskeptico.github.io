@@ -60,11 +60,11 @@ var admin = false;
 var needtapepassword = false;
 var needunblockpassword = false;
 
-console.log("you seem to have wandered far into the developer section...")
-console.log("...")
-console.log("...")
-console.log("...")
-console.log("run along now.")
+console.log("you seem to have wandered far into the developer section...");
+console.log("...");
+console.log("...");
+console.log("...");
+console.log("run along now.");
 
 input.addEventListener("keydown", function(event) {
   if (event.key === "Enter") {
@@ -159,6 +159,9 @@ function handleCommand(command) {
       break;
     case "me":
       response = "you";
+      break;
+    case "yo":
+      response = "greta";
       break;
     case "whoami":
       response = "Not sure, but probably a weirdo on a weirdo's website using weird commands";
