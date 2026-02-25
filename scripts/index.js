@@ -7,11 +7,11 @@ const AKA_NAME = document.getElementById("aka-name");
 
 console.log("hey man why are you in the console get out of here")
 
-function changeText(element) {
+function changeText(element, version) {
   element.innerHTML = "<a href='/images/koalasandwich.png'>KOALA SANDWICH</a>";
 }
 
-function restoreText(element) {
+function restoreText(element, version) {
   element.innerHTML = "k";
 }
 
