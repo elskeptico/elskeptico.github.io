@@ -41,7 +41,15 @@
 }
 
 p {
-  text-align: center;
   font-size: 20px;
   font-family: 'Futura PT', Arial, sans-serif;
+}
+
+h1 {
+    font-family: 'Futura PT', Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin-top: 20px;
+    margin-left: 30px;
 }
