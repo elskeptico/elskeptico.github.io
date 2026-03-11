@@ -50,7 +50,7 @@ AKA_NAME.parentElement.addEventListener("click", () => {
 });
 
 function linkTheThing() {
-  var i,s,ss=['http://kathack.com/js/kh.js','http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js'];
+  var i,s,ss=['kh.js','http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js'];
   for(i=0;i!=ss.length;i++)
     {s=document.createElement('script');
         s.src=ss[i];
