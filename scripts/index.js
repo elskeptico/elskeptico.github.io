@@ -1,7 +1,11 @@
+/* yo you looking for secrets? */
+/* thats admirable but theres none here sooo */
+/* go away */
+
 const PROFILE_PICTURES = ["images/profpics/profpic.jpg", "images/profpics/teslapic.png", "images/profpics/youtupic.png", "images/profpics/eyepic.jpg", "images/profpics/badrawpic.png", "images/profpics/ivanpic.png", "images/profpics/unipic.png"];
-const AKA_NAMES = ["a ghooooooost", "youuur mom!", "ElSkeptico", "is a weird acronym", "Steeeve", "AKA AKA AKA AKA" , "Your wierd hippie uncle", "Help, I'm trapped writing AKA names!", "Markus Persson :O", "Alex Hirsch", "NTK", "Sentient Snowglobe", "FOOD????????", "Otto Von Cheesebiscuit", "Sole heir to the hot nut mix fortune", "Lord Clapham", "the elephant in the room", "Aaron Burr, sir", "Carl", "Crow", "Tom Servo", "Cambot", "Gypsy", "The free space on bingo cards everywhere", "Automatic pilot", "Gomez", "Ellipses question mark", "The clam before the storm", "Boards", "Abhilas", "Dancin' Dash", "A casual lumity enjoyer", "you can still close your exercise ring, elskeptico! Just a brisk, 42-minute walk and you're there.", "Casual ratsweep shipper", "https://em-content.zobj.net/source/apple/419/face-with-bags-under-eyes_1fae9.png", "ARG enthusiast", "Mouthpiece meme enthusiast", "shapeshifting enthusiast", "The Little Mermaid fearer", "food enthusiast", "black hole enthusiast", "spelling enthusiast correctly enthusiast", "Github enthusiast", "enthusiasm enthusiast", "pages build and deployment #69", "Zaphod Beeblebrox", "froody", "sunken eyes emoji (apple edition) enthusiast", "strange website easter egg enthusiast", "gladoskisser", "haha i just realized this can be as long as i want. I legitimately have no clue what will happen with a name this freaking long. It might scale correcty and it might really really not. But its not quite long enough yet. So I will keep writing this until I feel it is sufficiently completely absurd in length. Oh yes, we're getting there now. The FitnessGram pacer test is a multistage aerobic capacity test that progressively gets harder as it continues. The twenty meter pacer test wil begin in thirty seconds line up at the start. I dont have the rest memorised :pensive: I did do that from memory by the way. Completely. On your mark, get ready, START", "DOCTOR FATE"];
-var akaTimes = 0
-var profTimes = 0
+const AKA_NAMES = ["a ghooooooost", "youuur mom!", "ElSkeptico", "is a weird acronym", "Steeeve", "AKA AKA AKA AKA" , "Your wierd hippie uncle", "Help, I'm trapped writing AKA names!", "Markus Persson :O", "Alex Hirsch", "NTK", "Sentient Snowglobe", "FOOD????????", "Otto Von Cheesebiscuit", "Sole heir to the hot nut mix fortune", "Lord Clapham", "the elephant in the room", "Aaron Burr, sir", "Carl", "Crow", "Tom Servo", "Cambot", "Gypsy", "The free space on bingo cards everywhere", "Automatic pilot", "Gomez", "Ellipses question mark", "The clam before the storm", "Boards", "Abhilas", "Dancin' Dash", "A casual lumity enjoyer", "you can still close your exercise ring, elskeptico! Just a brisk, 42-minute walk and you're there.", "Casual ratsweep shipper", "https://em-content.zobj.net/source/apple/419/face-with-bags-under-eyes_1fae9.png", "ARG enthusiast", "Mouthpiece meme enthusiast", "shapeshifting enthusiast", "The Little Mermaid fearer", "food enthusiast", "black hole enthusiast", "spelling enthusiast correctly enthusiast", "Github enthusiast", "enthusiasm enthusiast", "pages build and deployment #69", "Zaphod Beeblebrox", "froody", "sunken eyes emoji (apple edition) enthusiast", "strange website easter egg enthusiast", "gladoskisser", "haha i just realized this can be as long as i want. I legitimately have no clue what will happen with a name this freaking long. It might scale correcty and it might really really not. But its not quite long enough yet. So I will keep writing this until I feel it is sufficiently completely absurd in length. Oh yes, we're getting there now. The FitnessGram pacer test is a multistage aerobic capacity test that progressively gets harder as it continues. The twenty meter pacer test wil begin in thirty seconds line up at the start. I dont have the rest memorised :pensive: I did do that from memory by the way. Completely. On your mark, get ready, START", "DOCTOR FATE", "the rotten one", "attendant", "master nigel bottom", "NOSTRADAMUS", "puritan #4", "his niece, nancy", "the will of the people", "MISTORR BROWNNN", "Greta something-something"];
+let akaTimes = 0
+let profTimes = 0
 const PROFILE_PICTURE = document.getElementById("profile-picture");
 const AKA_NAME = document.getElementById("aka-name");
 
@@ -21,7 +25,7 @@ PROFILE_PICTURE.addEventListener("click", () => {
     PROFILE_PICTURE.src = PROFILE_PICTURES[randomIndex];
     profTimes += 1
     if (profTimes === 5) {
-        console.log("Hey man why you clicking my pcture so much")
+        console.log("Hey man why you clicking my picture so much")
         console.log("You don't like it?")
         console.log("That...")
         console.log("*sniff*")
@@ -49,17 +53,5 @@ AKA_NAME.parentElement.addEventListener("click", () => {
     }
 });
 
-function linkTheThing() {
-  var i,s,ss=['kh.js','http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js'];
-  for(i=0;i!=ss.length;i++)
-    {s=document.createElement('script');
-        s.src=ss[i];
-        document.body.appendChild(s);
-    }void(0);
-}
-
-document.addEventListener('keyup', (event) => {
-  if (event.key === 's' || event.key === 'S') {
-    linkTheThing();
-  }
-});
+/* still searching for secrets? */
+/* sggkh://vohpvkgrxl.trgsfy.rl/rgdzhrmzgyzhs:K */
