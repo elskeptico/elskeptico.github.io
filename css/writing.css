@@ -40,6 +40,10 @@
     src: url('fonts/futura/FuturaCyrillicExtraBold.woff') format('woff');
 }
 
+html {
+    margin-left: 50px;
+}
+
 p {
   font-size: 20px;
   font-family: 'Futura PT', Arial, sans-serif;
@@ -54,6 +58,6 @@ body {
     margin-left: 30px;
 }
 
-.thump {
+.out {
     padding-left: 50px;
 }

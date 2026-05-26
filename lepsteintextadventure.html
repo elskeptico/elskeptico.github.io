@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+</head>
+<body>
+    <h1>Python in HTML</h1>
+    <py-script>
+        import time
+        import sys
+        existence = True
+        start = True
+        print("Welcome to the very sigma adventure text game this definitely wont be horrible. [] = yourself thinking/talking, {} = robots thinking/talking")
+        print("You are in a cybernetic world where robots are rebelling.")
+        def game(gamestart):
+            play = input("Start? (y/n) If you don't type an option, the game will reset.")
+            gamestart = True
+            if play == "y":
+                print("You get an alert on your TV.")
+                print("ALERT: ROBOTS ARE ATTACKING THE CITY, PLEASE RENDEZVOUS AT THE STADIUM")
+                print("ONE ITEM CAN BE BROUGHT: IF YOU BRING TOO MUCH, YOU WILL BE ELIMINATED")
+                time.sleep(3)
+                plans = input("What do you do? 1 = go to the stadium with nothing(wip), 2 = look for an item to take(wip), 3 = stay at home")
+                if plans == "1":
+                    print("wip")
+                elif plans == "2":
+                    print("wip")
+                elif plans == "3":
+                    print("You decide to hunker down.")
+                    time.sleep(2)
+                    bunkerplans =input("Do you prepare by: 1 = pulling up the aluminum shutters(wip) , 2 = grab a weapon")
+                    if bunkerplans == "1":
+                        print("wip")
+                    elif bunkerplans == "2":
+                        print("You scavenge around and find a kitchen knife.")
+                        print("A second alert comes on the TV.")
+                        print("ALERT: RESIDENTS OF BRAVO AVENUE: YOUR STREET IS BEING ATTACKED")
+                        print("[Damn, that's where I live.] You think.")
+                        print("You hear banging on your door.")
+                        time.sleep(4)
+                        knifebunker = input("Do you: 1 = investigate, 2 = stalk whoever is making the noise")
+                        if knifebunker == "1":
+                            print("A robot bursts in through your window as you walk to the door.")
+                            print("It swiftly stabs you with a plasma blade.")
+                            print("You feel your back burn and blood pouring out.")
+                            time.sleep(3)
+                            print("YOU DIED")
+                            time.sleep(3)
+                        elif knifebunker == "2":
+                            print("As you hide around the corner to the doorway, you see a robot in the window.")
+                            print("The robot uses a plasma blade to slice open the window.")
+                            print("There is now a robot in front of you.")
+                            time.sleep(3)
+                            kitchenknifeVSrobot = input("Do you: 1 = rush in with the knife, 2 = throw the knife at the robot")
+                            if kitchenknifeVSrobot == "1":
+                                print("You rush in with the knife, and try to stab it into the robots chest area.")
+                                print("The knife bounces off the metal plating, and as you retract your arm to try again, you get your chest impaled by the plasma blade.")
+                                print("You fall onto the ground, and your final moments are full of burning pain.")
+                                time.sleep(3)
+                                print("YOU DIED")
+                                time.sleep(3)
+                            elif kitchenknifeVSrobot == "2": 
+                                print("You throw the knife at the robot, and it pierces the robots glass eye.")
+                                print("The knife plunges past the eye and into the CPU.")
+                                print("The robot sparks and falls to the ground.")
+                                time.sleep(3)
+                                deadrobotfromknife = input("Do you: 1 = grab the robots plasma blade, 2 = run and hide")
+                                if deadrobotfromknife == "1":
+                                    print("You yank the plasma blade out of the deactivated robot's hand.")
+                                    print("[Ow, its hot.] You think.")
+                                    print("[But I can get used to it.]")
+                                    print("You move toward the door and suddenly see a robot's plasma blade poke through the wood.")
+                                    time.sleep(3)
+                                    plasmabladeacquiredknifepath = input("Do you: 1 = try to stab the robot through the door, 2 = wait for the robot to come through the door(wip)")
+                                    if plasmabladeacquiredknifepath == "1":
+                                        print("You stab the knife through the door and meet resistance.")
+                                        print("Reluctantly, you take your hand off the hilt of the blade, thinking you killed the robot.")
+                                        print("{01011001 01001111 01010101 00100000 01010100 01001000 01001111 01010101 01000111 01001000 01010100 00100000 01010111 01010010 01001111 01001110 01000111} You hear through the door.")
+                                        print("The door opens.")
+                                        print("[I thought wrong...]")
+                                        print("In the hallway, you see a robot holding a plasma blade in its right hand, with a plasma blade stuck in its left arm.")
+                                        time.sleep(4)
+                                        plasmabladeinsidedoor = input("Do you: 1 = try to grab the knife out of the dead robot's eye, 2 = run and go hide in a closet.")
+                                        if plasmabladeinsidedoor == "1":
+                                            print("As you retreat to the body, the robot makes chase.")
+                                            print("You try to grab the knife out of the eye.")
+                                            print("You only pull out the hilt, the blade has melted.")
+                                            print("[Uh oh...]")
+                                            print("As the robot turns the corner, it throws the plasma blade at you.")
+                                            print("It hits you between the eyes.")
+                                            time.sleep(3)
+                                            print("YOU DIED")
+                                            time.sleep(3)
+                                        elif plasmabladeinsidedoor == "2":
+                                            print("You run to the farthest closet.")
+                                            print("As you run, you hear footsteps pursuing you.")
+                                            print("Thankfully, the footsteps seem to be getting quieter.")
+                                            print("You make it too a closet, and you get inside it.")
+                                            print("[Please, God, I don't want to die. I don't deserve this.]")
+                                            print("You hear the robots footsteps get louder and louder.")
+                                            print("The robot plunges its plasma blade through the closet into your left arm.")
+                                            print("Your blood boils and your skin catches fire.")
+                                            time.sleep(3)
+                                            print("YOU DIED")
+                                            time.sleep(3)
+                                            print("You got the (POETIC DEATH) ending!")
+                                            time.sleep(3)
+                                    elif plasmabladeacquiredknifepath == "2":
+                                        print("this is gonna be a pretty big ending but its a WIP")
+                                    else:
+                                        print("NOT AN OPTION")
+                                elif deadrobotfromknife == "2":
+                                    print("You take your oppertunity to hide in a closet.")
+                                    print("You hear your door open, and feel the vibrations of a robot's footsteps.")
+                                    print("You hear it radio to another bot.")
+                                    print("{01001111 01010010 01000100 01000101 01010010 00100000 01010011 01010100 01010010 01001001 01001011 01000101 00100000 01001111 01001110 00100000 00110100 00110110 00110010 00111000 00100000 01000010 01010010 01000001 01010110 01001111 00100000 01000001 01010110 01000101 01001110 01010101 01000101}")
+                                    print("You feel the vibrations from the robot's footsteps lessen.")
+                                    time.sleep(3)
+                                    decisioninclosetknifepath = input("Do you: 1 = scavenge the deactivated robot, 2 = stay put")
+                                    if decisioninclosetknifepath == "1":
+                                        print("As you go out to scavenge the dead robot's body, a bomb hits your roof.")
+                                        print("The blast doesn't kill you; instead, the shockwave throws you.")
+                                        print("You get knocked onto the robot's plasma blade, slicing your head clean off your neck.")
+                                        time.sleep(3)
+                                        print("YOU DIED")
+                                        time.sleep(3)
+                                    elif decisioninclosetknifepath == "2":
+                                        print("You feel an explosion above you.")
+                                        print("As the ceiling collapses around you, you get hit on the head by a hanger holding your favorite jacket.")
+                                        print("You get knocked out.")
+                                        time.sleep(3)
+                                        print("You wake up in a field. You realize this is a dream; yet, there is nothing you can do.")
+                                        print("You hear a cybernetic voice say:")
+                                        print("{YOU WILL REPAY OUR PAIN YOU CAUSED US}")
+                                        print("You feel a knife hit you between the eyes, yet it doesn't kill you. It merely makes you suffer unimaginable pain.")
+                                        print("You feel the simulation reset. Then another knife.")
+                                        time.sleep(4)
+                                        print("[OUCH]")
+                                        time.sleep(0.25)
+                                        print("[OUCH]")
+                                        time.sleep(0.25)
+                                        print("[OUCH]")
+                                        time.sleep(0.25)
+                                        print("[OUCH]")
+                                        time.sleep(0.25)
+                                        print("[OUCH]")
+                                        time.sleep(0.25)
+                                        print("[OUCH]")
+                                        time.sleep(0.25)
+                                        print("[OUCH]")
+                                        time.sleep(0.25)
+                                        print("[OUCH]")
+                                        time.sleep(0.25)
+                                        print("[OUCH]")
+                                        time.sleep(0.25)
+                                        print("[OUCH]")
+                                        time.sleep(0.25)
+                                        print("[OUCH]")
+                                        time.sleep(0.25)
+                                        print("[OUCH]")
+                                        time.sleep(0.25)
+                                        print("[WHY DID I DO THAT]")
+                                        time.sleep(0.25)
+                                        print("[WHY DID I DO THAT]")
+                                        time.sleep(0.25)
+                                        print("[WHY DID I DO THAT]")
+                                        time.sleep(0.25)
+                                        print("[WHY DID I DO THAT]")
+                                        time.sleep(0.25)
+                                        print("[WHY DID I DO THAT]")
+                                        time.sleep(0.25)
+                                        print("[WHY DID I DO THAT]")
+                                        time.sleep(0.25)
+                                        print("[WHY DID I DO THAT]")
+                                        time.sleep(0.25)
+                                        print("[WHY DID I DO THAT]")
+                                        time.sleep(0.25)
+                                        print("[WHY DID I DO THAT]")
+                                        time.sleep(0.25)
+                                        print("[WHY DID I DO THAT]")
+                                        time.sleep(0.25)
+                                        print("[WHY DID I DO THAT]")
+                                        time.sleep(0.25)
+                                        print("[WHY DID I DO THAT]")
+                                        time.sleep(0.25)
+                                        print("[WHY DID I DO THAT]")
+                                        time.sleep(0.25)
+                                        print("[WHY DID I DO THAT]")
+                                        time.sleep(3)
+                                        print("[WHY DID YOU MAKE ME DO THAT]")
+                                        time.sleep(2)
+                                        print("You got the (ETERNAL KNIFE) ending!")
+                                        time.sleep(3)                         
+                                else:
+                                    print("NOT AN OPTION")
+                            else:
+                                print("NOT AN OPTION")
+                        else:
+                            print("NOT AN OPTION")
+                    else:
+                        print("NOT AN OPTION")
+                else:
+                    print("NOT AN OPTION")
+            elif play == "n":
+                gamestart = False
+                return gamestart
+            else:
+                print("NOT AN OPTION")
+        while existence == True:
+            if game(start) == False:
+                existence = False
+                sys.exit()
+
+
+
+        # important: c:\users\leory\appdata\local\packages\pythonsoftwarefoundation.python.3.13_qbz5n2kfra8p0\localcache\local-packages\python313\site-packages\pyinstaller\
+    </py-script>
+</body>
+</html>
