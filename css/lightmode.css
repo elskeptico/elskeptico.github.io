@@ -55,7 +55,7 @@ a {
 
 .link:active {
     box-shadow: 4px -4px 0px hsla(19, 100%, 44%, 1);
-    transform: translateY(-4px);
+    transform: translate(4px, -4px);
     transition: all 0.05s;
 }
 
