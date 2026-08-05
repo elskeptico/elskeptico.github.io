@@ -48,13 +48,13 @@ a {
 }
 
 .link:hover {
-    box-shadow: 4px 4px 0px hsla(19, 100%, 44%, 1);
+    box-shadow: -4px -4px 0px hsla(19, 100%, 44%, 1);
     transform: translate(4px, 4px);
     transition: all 0.4s;
 }
 
 .link:active {
-    box-shadow: 4px -4px 0px hsla(19, 100%, 44%, 1);
+    box-shadow: -4px -4px 0px hsla(19, 100%, 44%, 1);
     transform: translate(4px, -4px);
     transition: all 0.05s;
 }
