@@ -51,3 +51,13 @@ div.topright {
     top: 0px;
     right: 0px;
 }
+
+.pager {
+    position: relative;
+}
+
+img.pager {
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+}
