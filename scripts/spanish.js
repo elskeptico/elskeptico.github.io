@@ -8,6 +8,7 @@ var tempquestions = questions;
 var tempanswers = answers;
 var score = 0;
 var numberofquestions = 1;
+var version = "goodpoint";
 
 var random = Math.floor(Math.random() * questions.length);
 document.getElementById("question").textContent = questions[random];
