@@ -8,7 +8,7 @@ var tempquestions = questions;
 var tempanswers = answers;
 var score = 0;
 var numberofquestions = 1;
-var version = "goodoint";
+var version = "goodint";
 let correctanswer;
 let answer;
 
@@ -19,11 +19,11 @@ correctanswer = answers[random];
 submitButton.addEventListener('click', function() {
     answer = inputField.value;
     alert(answer)
-    if (answer.toLowerCase == correctanswer) {
+    if (answer == correctanswer) {
         alert("Correct!");
         score += 1;
     }
-    if (answer.toLowerCase != correctanswer) {
+    if (answer != correctanswer) {
         alert("Incorrect! The correct answer was " + answers[random]);
     }
     random = Math.floor(Math.random() * questions.length);
