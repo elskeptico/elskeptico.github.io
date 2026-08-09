@@ -10,13 +10,14 @@ var score = 0;
 var numberofquestions = 1;
 var version = "goodoint";
 let correctanswer;
+let answer;
 
 var random = Math.floor(Math.random() * questions.length);
 document.getElementById("question").textContent = questions[random];
 correctanswer = answers[random];
 
 submitButton.addEventListener('click', function() {
-    let answer = inputField.value;
+    answer = inputField.value;
     if (answer.toLowerCase == correctanswer) {
         alert("Correct!");
         score += 1;
