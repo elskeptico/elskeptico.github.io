@@ -16,11 +16,11 @@ document.getElementById("question").textContent = questions[random];
 
 submitButton.addEventListener('click', function() {
     let answer = inputField.value;
-    if (answer.toLowerCase != answers[random]) {
-        alert("Incorrect! The correct answer was " + answers[random]);
-    } else if (answer.toLowerCase == answers[random]) {
+    if (answer.toLowerCase == answers[random]) {
         alert("Correct!");
         score += 1;
+    } else if (answer.toLowerCase != answers[random]) {
+        alert("Incorrect! The correct answer was " + answers[random]);
     }
     random = Math.floor(Math.random() * questions.length);
     questionText.textContent = questions[random];
