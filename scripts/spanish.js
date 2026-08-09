@@ -18,6 +18,7 @@ correctanswer = answers[random];
 
 submitButton.addEventListener('click', function() {
     answer = inputField.value;
+    alert(answer)
     if (answer.toLowerCase == correctanswer) {
         alert("Correct!");
         score += 1;
