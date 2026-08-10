@@ -27,7 +27,7 @@ submitButton.addEventListener('click', function() {
     if (answer != correctanswer) {
         alert("Incorrect! The correct answer was " + answers[random]);
     }
-    if (questions.length = 0) {
+    if (questions.length == 0) {
         finishTest();
     } else {
         random = Math.floor(Math.random() * questions.length);
