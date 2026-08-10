@@ -4,6 +4,7 @@ const empty = [];
 const questionText = document.getElementById("question");
 const inputField = document.getElementById("inputfield");
 const submitButton = document.getElementById("submitbutton");
+const finishButton = document.getElementById("finishbutton");
 var tempquestions = questions;
 var tempanswers = answers;
 var score = 0;

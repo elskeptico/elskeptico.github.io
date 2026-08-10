@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Impact Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Impact Regular'), url('../fonts/impact.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    font-weight: 400;
+    src: url('/fonts/futura/FuturaCyrillicBook.woff') format('woff');
+}
+    
+
+div {
+    width: 75%;
+    height: auto;
+    filter: blur();
+    border-radius: 20px;
+}
+
+h1 {
+    font-family: 'Impact Regular';
+}
+
+html {
+    font-family: 'Futura PT', Arial, sans-serif;
+    background-image: linear-gradient(top left, #41a0ae, #77f07f);
+}

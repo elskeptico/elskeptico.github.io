@@ -62,7 +62,7 @@ var needunblockpassword = false;
 let loginuser = false;
 let loginpassword = false;
 let username = "";
-let username = "";
+let password = "";
 
 console.log("you seem to have wandered far into the developer section...");
 console.log("...");
@@ -267,7 +267,6 @@ function handleCommand(command) {
   } elif (loginuser == true && loginpassword == false); {
     username += command;
     response = `Password:`
-    break;
   } elif (loginuser == true && loginpassword == true); {
     password += command;
     const userpassword = username += "_" += password;
