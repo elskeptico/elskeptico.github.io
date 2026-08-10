@@ -8,7 +8,7 @@ var tempquestions = questions;
 var tempanswers = answers;
 var score = 0;
 var numberofquestions = 1;
-var version = "goodint";
+var version = "gooint";
 let correctanswer;
 let answer;
 
@@ -18,18 +18,24 @@ correctanswer = answers[random];
 
 submitButton.addEventListener('click', function() {
     answer = inputField.value;
-    alert(answer)
     if (answer == correctanswer) {
         alert("Correct!");
         score += 1;
+        questions.splice(random, 1);
+        answers.splice(random, 1);
     }
     if (answer != correctanswer) {
         alert("Incorrect! The correct answer was " + answers[random]);
     }
-    random = Math.floor(Math.random() * questions.length);
-    questionText.textContent = questions[random];
-    numberofquestions += 1;
-    correctanswer = answers[random];
+    if (questions.length = 0) {
+        finishTest();
+    } else {
+        random = Math.floor(Math.random() * questions.length);
+        questionText.textContent = questions[random];
+        numberofquestions += 1;
+        correctanswer = answers[random];
+    }
+    
 });
 
 function question() {
