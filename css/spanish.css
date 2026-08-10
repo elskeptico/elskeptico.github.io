@@ -12,11 +12,17 @@
 }
     
 
-div {
+div.main {
     width: 75%;
     height: auto;
     filter: blur();
     border-radius: 20px;
+    display: flex;
+}
+
+div.buttons {
+    display: flex;
+    justify-content: center;
 }
 
 h1 {
