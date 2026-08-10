@@ -13,8 +13,8 @@
     
 
 div.main {
-    width: 75%;
-    height: auto;
+    width: 500px;
+    height: 500px;
     filter: blur();
     border-radius: 20px;
     display: flex;
