@@ -18,6 +18,15 @@ document.getElementById("question").textContent = questions[random];
 correctanswer = answers[random];
 
 submitButton.addEventListener('click', function() {
+    submit();
+});
+
+function finishTest() {
+    let accuracy = ((numberofquestions / score) * 100).toFixed(2).toString;
+    alert("Practice complete. \nAccuracy: " + accuracy + "% (" + score.toString + " / " + numberofquestions.toString + ") \nPressing OK will start another round.");
+}
+
+function submit() {
     answer = inputField.value;
     if (answer == correctanswer) {
         alert("Correct!");
@@ -36,8 +45,7 @@ submitButton.addEventListener('click', function() {
         numberofquestions += 1;
         correctanswer = answers[random];
     }
-    
-});
+}
 
 function question() {
     var random = Math.floor(Math.random() * questions.length)

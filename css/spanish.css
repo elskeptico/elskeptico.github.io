@@ -21,7 +21,7 @@ div.main {
 
 div.buttons {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
 }
 
 h1 {
