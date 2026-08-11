@@ -38,6 +38,7 @@ function finishTest() {
 
 function submit() {
     answer = inputField.value;
+    answer = answer.toLowerCase;
     if (answer == correctanswer) {
         alert("Correct!");
         score += 1;
