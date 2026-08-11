@@ -33,4 +33,5 @@ html {
     background-image: linear-gradient(top left, #41a0ae, #77f07f);
     display: flex;
     justify-content: center;
+    align-items: center;
 }

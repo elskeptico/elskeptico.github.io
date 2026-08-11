@@ -21,9 +21,19 @@ submitButton.addEventListener('click', function() {
     submit();
 });
 
+finishButton.addEventListener('click', function() {
+    finishTest();
+});
+
+document.addEventListener('keydown', (event) => {
+    if (event.key == "Enter") {
+        submit();
+    }
+});
+
 function finishTest() {
-    let accuracy = ((numberofquestions / score) * 100).toFixed(2).toString;
-    alert("Practice complete. \nAccuracy: " + accuracy + "% (" + score.toString + " / " + numberofquestions.toString + ") \nPressing OK will start another round.");
+    let accuracy = ((numberofquestions / score) * 100).toFixed(2);
+    alert("Practice complete. \nAccuracy: " + accuracy + "% (" + score + " / " + numberofquestions + ") \nPressing OK will start another round.");
 }
 
 function submit() {
@@ -45,10 +55,4 @@ function submit() {
         numberofquestions += 1;
         correctanswer = answers[random];
     }
-}
-
-function question() {
-    var random = Math.floor(Math.random() * questions.length)
-    document.getElementById("question").textContent = questions[random];
-
 }
